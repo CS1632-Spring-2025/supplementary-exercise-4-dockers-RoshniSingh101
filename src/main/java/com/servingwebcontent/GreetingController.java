@@ -1,15 +1,9 @@
 package com.servingwebcontent;
 
-import javax.annotation.PostConstruct;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class GreetingController {
@@ -132,7 +126,6 @@ public class GreetingController {
 		String content = "<h4>Cats available for rent:</h4>\n";
 		content += "<div class=\"text-left\" id=\"listing\">\n";
 		content += "</div>\n";
-		
 		content += "<script>reset();</script>\n";
 		
 		model.addAttribute("content", content);
